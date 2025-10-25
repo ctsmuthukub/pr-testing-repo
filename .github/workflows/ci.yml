@@ -4,7 +4,10 @@ on:
   pull_request:
     branches:
       - main
-
+  push:
+    branches:
+      - main
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,8 +15,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: view readme
-        run: cat README.md
-      
       - name: list files
         run: ls -la
