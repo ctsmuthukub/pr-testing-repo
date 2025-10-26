@@ -1,0 +1,11 @@
+# Ignore common development files and directories
+.git
+.gitignore
+node_modules/
+temp/
+*.log
+*.tmp
+# Exclude the Dockerfile itself (though it's usually needed)
+Dockerfile
+# Include a specific file within an ignored directory
+!temp/important.txt

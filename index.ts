@@ -1,4 +1,4 @@
-import { add } from "@/math";
+import { add } from "./math.js";
 
 function greet(name: string) {
 	console.log(`Hello, ${name}!`);
