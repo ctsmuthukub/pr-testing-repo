@@ -17,3 +17,15 @@ jobs:
 
       - name: list files
         run: ls -la
+      
+      - name: lint code
+        run: npm run lint
+
+      - name: run type checker
+        run: npm run typecheck
+
+      - name: run tests
+        run: echo "No tests yet"
+      
+      - name: build project
+        run: npm run build
